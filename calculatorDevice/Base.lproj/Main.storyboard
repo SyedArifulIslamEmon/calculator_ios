@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eN2-nQ-APU">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,191 +10,349 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="FeN-An-RcH">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="calculatorDevice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eN2-nQ-APU" customClass="ViewController" customModule="calculatorDevice" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="jbh-5o-H5r"/>
+                        <viewControllerLayoutGuide type="bottom" id="r69-pZ-I1b"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="FZN-3b-AfE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="0" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FwW-jF-BjL">
-                                <rect key="frame" x="16" y="40" width="343" height="30"/>
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4R-w9-3yR">
+                                <rect key="frame" x="53" y="182" width="52" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.68659383058547974" green="0.91892832517623901" blue="0.93563276529312134" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bie-Wl-A9j">
-                                <rect key="frame" x="24" y="117" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.95194023847579956" green="0.92685693502426147" blue="0.092224232852458954" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="MC"/>
+                                <color key="backgroundColor" red="0.95194023849999998" green="0.94715673440000003" blue="0.50801365649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="MC">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="operations:" destination="eN2-nQ-APU" eventType="touchUpInside" id="UPZ-BU-fLx"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcQ-3b-gi8">
-                                <rect key="frame" x="321" y="117" width="30" height="30"/>
+                            <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Deo-J9-cOz">
+                                <rect key="frame" x="107" y="182" width="52" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.18906381726264954" green="0.99315780401229858" blue="0.13733690977096558" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="_/"/>
+                                <color key="backgroundColor" red="0.95194023849999998" green="0.94715673440000003" blue="0.50801365649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="MR">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="operations:" destination="eN2-nQ-APU" eventType="touchUpInside" id="jNx-Gy-wXW"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ujq-Y8-whp">
-                                <rect key="frame" x="246" y="117" width="30" height="30"/>
+                            <button opaque="NO" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOG-kz-8fZ">
+                                <rect key="frame" x="161" y="182" width="52" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.95194023847579956" green="0.92685693502426147" blue="0.092224232852458954" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="M-"/>
+                                <color key="backgroundColor" red="0.95194023849999998" green="0.94715673440000003" blue="0.50801365649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="M+">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="operations:" destination="eN2-nQ-APU" eventType="touchUpInside" id="oNL-IF-dlB"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clO-dz-DSC">
-                                <rect key="frame" x="172" y="117" width="30" height="30"/>
+                            <button opaque="NO" tag="15" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDm-fl-jxk">
+                                <rect key="frame" x="215" y="182" width="52" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.95194023847579956" green="0.92685693502426147" blue="0.092224232852458954" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="M+"/>
+                                <color key="backgroundColor" red="0.95194023849999998" green="0.94715673440000003" blue="0.50801365649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="M-">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="operations:" destination="eN2-nQ-APU" eventType="touchUpInside" id="D6Z-zy-ldl"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4KZ-dD-nWr">
-                                <rect key="frame" x="94" y="117" width="30" height="30"/>
+                            <button opaque="NO" tag="16" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nto-0d-0Yr">
+                                <rect key="frame" x="269" y="182" width="52" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.95194023847579956" green="0.92685693502426147" blue="0.092224232852458954" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="MR"/>
+                                <color key="backgroundColor" red="0.6547043306" green="0.9160887003" blue="0.57898716939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="_/">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="operations:" destination="eN2-nQ-APU" eventType="touchUpInside" id="bR8-KH-QiB"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kut-kQ-T6r">
-                                <rect key="frame" x="24" y="248" width="30" height="30"/>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xfs-DS-HmS">
+                                <rect key="frame" x="53" y="226" width="52" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.52319389581680298" green="0.72873622179031372" blue="0.91285610198974609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="4"/>
+                                <color key="backgroundColor" red="0.44804148170000002" green="0.76621423089999996" blue="0.9160887003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="7">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="numbers:" destination="eN2-nQ-APU" eventType="touchUpInside" id="IEn-jd-MXG"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7h-Kd-s7u">
-                                <rect key="frame" x="321" y="248" width="30" height="30"/>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5o-70-Hyr">
+                                <rect key="frame" x="107" y="226" width="52" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.18906381726264954" green="0.99315780401229858" blue="0.13733690977096558" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="1/x"/>
+                                <color key="backgroundColor" red="0.44804148170000002" green="0.76621423089999996" blue="0.9160887003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="8">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="numbers:" destination="eN2-nQ-APU" eventType="touchUpInside" id="fvZ-JF-mpF"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PY1-pd-9Wc">
-                                <rect key="frame" x="246" y="248" width="30" height="30"/>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Zv-av-0cA">
+                                <rect key="frame" x="161" y="226" width="52" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.18906381726264954" green="0.99315780401229858" blue="0.13733690977096558" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="*"/>
+                                <color key="backgroundColor" red="0.44804148170000002" green="0.76621423089999996" blue="0.9160887003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="9">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="numbers:" destination="eN2-nQ-APU" eventType="touchUpInside" id="VVx-Kx-Knw"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLg-ef-VuS">
-                                <rect key="frame" x="172" y="248" width="30" height="30"/>
+                            <button opaque="NO" tag="17" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAX-Fo-Rcr">
+                                <rect key="frame" x="215" y="226" width="52" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.56330198049545288" green="0.74514919519424438" blue="0.91608870029449463" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="6"/>
+                                <color key="backgroundColor" red="0.6547043306" green="0.9160887003" blue="0.57898716939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="/">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="operations:" destination="eN2-nQ-APU" eventType="touchUpInside" id="1vr-UM-x4t"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNZ-4H-6kf">
-                                <rect key="frame" x="94" y="248" width="30" height="30"/>
+                            <button opaque="NO" tag="18" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9h-3e-uKx">
+                                <rect key="frame" x="269" y="226" width="52" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.56330198049545288" green="0.74514919519424438" blue="0.91608870029449463" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="5"/>
+                                <color key="backgroundColor" red="0.6547043306" green="0.9160887003" blue="0.57898716939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="%">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="operations:" destination="eN2-nQ-APU" eventType="touchUpInside" id="PMe-3v-QAV"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3M-ce-bZP">
-                                <rect key="frame" x="24" y="295" width="30" height="30"/>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zbz-cC-S4J">
+                                <rect key="frame" x="53" y="270" width="52" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.56330198049545288" green="0.74514919519424438" blue="0.91608870029449463" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="1"/>
+                                <color key="backgroundColor" red="0.44804148170000002" green="0.76621423089999996" blue="0.9160887003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="numbers:" destination="eN2-nQ-APU" eventType="touchUpInside" id="GZa-zk-wxJ"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyz-zY-GMB">
-                                <rect key="frame" x="246" y="295" width="30" height="30"/>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Uk-CH-Vcv">
+                                <rect key="frame" x="107" y="270" width="52" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.18906381726264954" green="0.99315780401229858" blue="0.13733690977096558" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="-"/>
+                                <color key="backgroundColor" red="0.44804148170000002" green="0.76621423089999996" blue="0.9160887003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="5">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="numbers:" destination="eN2-nQ-APU" eventType="touchUpInside" id="sTi-CZ-XHl"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tp9-dh-Cjg">
-                                <rect key="frame" x="172" y="295" width="30" height="30"/>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VqP-5K-XDi">
+                                <rect key="frame" x="161" y="270" width="52" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.56330198049545288" green="0.74514919519424438" blue="0.91608870029449463" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="3"/>
+                                <color key="backgroundColor" red="0.44804148170000002" green="0.76621423089999996" blue="0.9160887003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="6">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="numbers:" destination="eN2-nQ-APU" eventType="touchUpInside" id="Mji-Le-HpW"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JoR-WZ-cMF">
-                                <rect key="frame" x="94" y="295" width="30" height="30"/>
+                            <button opaque="NO" tag="19" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZnR-eN-yNZ">
+                                <rect key="frame" x="215" y="270" width="52" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.56330198049545288" green="0.74514919519424438" blue="0.91608870029449463" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="2"/>
+                                <color key="backgroundColor" red="0.6547043306" green="0.9160887003" blue="0.57898716939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="*">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="operations:" destination="eN2-nQ-APU" eventType="touchUpInside" id="Ks1-dP-swe"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29V-D1-xqW">
-                                <rect key="frame" x="24" y="350" width="30" height="30"/>
+                            <button opaque="NO" tag="20" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmH-2W-Ksh">
+                                <rect key="frame" x="269" y="270" width="52" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.56330198049545288" green="0.74514919519424438" blue="0.91608870029449463" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="0"/>
+                                <color key="backgroundColor" red="0.6547043306" green="0.9160887003" blue="0.57898716939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="1/x">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="operations:" destination="eN2-nQ-APU" eventType="touchUpInside" id="8wF-2z-YXC"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTz-Wf-qkL">
-                                <rect key="frame" x="246" y="350" width="30" height="30"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6L-dv-y90">
+                                <rect key="frame" x="53" y="314" width="52" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.18906381726264954" green="0.99315780401229858" blue="0.13733690977096558" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="+"/>
+                                <color key="backgroundColor" red="0.44804148170000002" green="0.76621423089999996" blue="0.9160887003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="numbers:" destination="eN2-nQ-APU" eventType="touchUpInside" id="5mF-fw-GRA"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYg-8L-1Yb">
-                                <rect key="frame" x="172" y="350" width="30" height="30"/>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAi-ep-QZ4">
+                                <rect key="frame" x="107" y="314" width="52" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.18906381726264954" green="0.99315780401229858" blue="0.13733690977096558" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="+/-"/>
+                                <color key="backgroundColor" red="0.44804148170000002" green="0.76621423089999996" blue="0.9160887003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="numbers:" destination="eN2-nQ-APU" eventType="touchUpInside" id="cyY-PE-3bl"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6NC-fl-j0N">
-                                <rect key="frame" x="94" y="350" width="30" height="30"/>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1CQ-5b-Za8">
+                                <rect key="frame" x="161" y="314" width="52" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.56330198049545288" green="0.74514919519424438" blue="0.91608870029449463" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="."/>
+                                <color key="backgroundColor" red="0.44804148170000002" green="0.76621423089999996" blue="0.9160887003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="numbers:" destination="eN2-nQ-APU" eventType="touchUpInside" id="fuZ-82-L2A"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9q-KD-AHC">
-                                <rect key="frame" x="24" y="183" width="30" height="30"/>
+                            <button opaque="NO" tag="21" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNF-KL-dqG">
+                                <rect key="frame" x="215" y="314" width="52" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.56330198049545288" green="0.74514919519424438" blue="0.91608870029449463" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="7"/>
+                                <color key="backgroundColor" red="0.6547043306" green="0.9160887003" blue="0.57898716939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="-">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="operations:" destination="eN2-nQ-APU" eventType="touchUpInside" id="66l-rU-EXd"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4f-TL-fpO">
-                                <rect key="frame" x="321" y="183" width="30" height="30"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omz-XN-erY">
+                                <rect key="frame" x="53" y="358" width="52" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.18906381726264954" green="0.99315780401229858" blue="0.13733690977096558" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="%"/>
+                                <color key="backgroundColor" red="0.44804148170000002" green="0.76621423089999996" blue="0.9160887003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="numbers:" destination="eN2-nQ-APU" eventType="touchUpInside" id="Oru-e3-rQ8"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KmU-6Q-mol">
-                                <rect key="frame" x="246" y="183" width="30" height="30"/>
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTw-fl-VKx">
+                                <rect key="frame" x="107" y="358" width="52" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.18906381726264954" green="0.99315780401229858" blue="0.13733690977096558" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="/"/>
+                                <color key="backgroundColor" red="0.44804148170000002" green="0.76621423089999996" blue="0.9160887003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title=".">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="dot_number:" destination="eN2-nQ-APU" eventType="touchUpInside" id="YoR-3G-tmD"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1O-m0-Vcu">
-                                <rect key="frame" x="172" y="183" width="30" height="30"/>
+                            <button opaque="NO" tag="23" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LO7-v7-vep">
+                                <rect key="frame" x="161" y="358" width="52" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.56330198049545288" green="0.74514919519424438" blue="0.91608870029449463" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="9"/>
+                                <color key="backgroundColor" red="0.6547043306" green="0.9160887003" blue="0.57898716939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="+/-">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="operations:" destination="eN2-nQ-APU" eventType="touchUpInside" id="lJN-Pl-kD1"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ih7-u9-XEs">
-                                <rect key="frame" x="94" y="183" width="30" height="30"/>
+                            <button opaque="NO" tag="24" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D0s-hs-893">
+                                <rect key="frame" x="215" y="358" width="52" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.56330198049545288" green="0.74514919519424438" blue="0.91608870029449463" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="8"/>
+                                <color key="backgroundColor" red="0.6547043306" green="0.9160887003" blue="0.57898716939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="operations:" destination="eN2-nQ-APU" eventType="touchUpInside" id="Kac-5e-ASp"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzI-TC-6dO">
-                                <rect key="frame" x="313" y="295" width="46" height="85"/>
+                            <button opaque="NO" tag="22" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYo-u5-YEf">
+                                <rect key="frame" x="269" y="314" width="52" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.18906381726264954" green="0.99315780401229858" blue="0.13733690977096558" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="="/>
+                                <color key="backgroundColor" red="0.6547043306" green="0.9160887003" blue="0.57898716939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="=">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="operations:" destination="eN2-nQ-APU" eventType="touchUpInside" id="FA8-tD-uzl"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Clear" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOx-U9-x6g">
-                                <rect key="frame" x="318" y="78" width="41" height="21"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K6Q-0E-p4H">
+                                <rect key="frame" x="53" y="164" width="226" height="3"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Clear" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JsK-cS-2cE">
+                                <rect key="frame" x="280" y="152" width="41" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="18"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gi9-Jx-zzU">
+                                <rect key="frame" x="53" y="133" width="268" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y6V-Cw-m3A">
-                                <rect key="frame" x="16" y="87" width="301" height="4"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qJL-bw-tNd">
+                                <rect key="frame" x="53" y="124" width="268" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRq-TR-q5M">
+                                        <rect key="frame" x="0.0" y="4" width="268" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="txt_enter_value" destination="8bC-Xf-vdC" id="WKx-4h-d6U"/>
+                        <outlet property="btn_0" destination="omz-XN-erY" id="XAp-lV-XCv"/>
+                        <outlet property="btn_1" destination="d6L-dv-y90" id="eZ4-AW-zFh"/>
+                        <outlet property="btn_1_by_x" destination="bmH-2W-Ksh" id="jWT-MS-Lrc"/>
+                        <outlet property="btn_2" destination="oAi-ep-QZ4" id="ZL0-0d-h8w"/>
+                        <outlet property="btn_3" destination="1CQ-5b-Za8" id="foU-mb-dBX"/>
+                        <outlet property="btn_4" destination="Zbz-cC-S4J" id="XIq-sa-gp4"/>
+                        <outlet property="btn_5" destination="5Uk-CH-Vcv" id="M1H-u5-ivp"/>
+                        <outlet property="btn_6" destination="VqP-5K-XDi" id="NZq-Iq-0Qv"/>
+                        <outlet property="btn_7" destination="Xfs-DS-HmS" id="kJl-XE-DfM"/>
+                        <outlet property="btn_8" destination="I5o-70-Hyr" id="SHN-eJ-cu0"/>
+                        <outlet property="btn_9" destination="2Zv-av-0cA" id="Pbb-xX-ZCw"/>
+                        <outlet property="btn_add" destination="D0s-hs-893" id="ysd-JM-oke"/>
+                        <outlet property="btn_add_subtact" destination="LO7-v7-vep" id="fMX-ol-EWF"/>
+                        <outlet property="btn_divide" destination="FAX-Fo-Rcr" id="DSA-j4-FSb"/>
+                        <outlet property="btn_dot" destination="sTw-fl-VKx" id="WKF-zW-jVs"/>
+                        <outlet property="btn_equals" destination="hYo-u5-YEf" id="1RN-uP-jMj"/>
+                        <outlet property="btn_mc" destination="O4R-w9-3yR" id="HyG-0m-5yc"/>
+                        <outlet property="btn_mminus" destination="HDm-fl-jxk" id="pJY-Rj-qag"/>
+                        <outlet property="btn_mplus" destination="qOG-kz-8fZ" id="dQ4-uO-tYB"/>
+                        <outlet property="btn_mr" destination="Deo-J9-cOz" id="Gb5-qw-skW"/>
+                        <outlet property="btn_percentage" destination="Q9h-3e-uKx" id="EE7-nW-aoo"/>
+                        <outlet property="btn_product" destination="ZnR-eN-yNZ" id="DCY-NF-moZ"/>
+                        <outlet property="btn_root" destination="nto-0d-0Yr" id="Hqy-TN-Lgn"/>
+                        <outlet property="btn_subtract" destination="aNF-KL-dqG" id="thY-cO-MQZ"/>
+                        <outlet property="label" destination="cRq-TR-q5M" id="Dbz-HB-oyr"/>
+                        <outlet property="result_view" destination="qJL-bw-tNd" id="ChD-h5-G9O"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z3q-v7-bK8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="143.19999999999999" y="-186.65667166416793"/>
+            <point key="canvasLocation" x="-4" y="-1164"/>
         </scene>
     </scenes>
 </document>
